@@ -1,0 +1,8 @@
+name: AntiVoidDeath
+version: "1.1"
+author: Bodyash
+main: me.bodyash.antivoiddeath.Main
+commands:
+    antivoiddeath:
+        description: Info about plugin
+        default: op
