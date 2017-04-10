@@ -18,7 +18,10 @@ public class PlayerListener implements Listener {
     public void onPlayerMove(PlayerMoveEvent e) {
         Player player = e.getPlayer();
         if (player.getLocation().getY() < 0) {
-            config.loadSpawn(player);
+            if(player.hasPermission("antivoiddeath.teleporttospawn")){
+            	config.loadSpawn(player);
+            }
+        	
         }
     }
 
